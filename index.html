@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+        .container{
+            position: sticky;
+            padding-bottom : 30px;
+            padding-top: 30px;
+            display: flex;
+            height: 40px;
+            width: 100%;
+            background-color: rgb(105, 40, 42);
+            
+
+        }
+        .logo{
+            height: 100px;
+            margin-top: -30px;
+            margin-left: 23px;
+        }
+
+        .box{
+            margin-left: 30px;
+            border-radius: 20px;
+            height: 30px;
+            width: 400px;
+            padding-left: 20px;
+            border: 2px solid blue;
+        }
+       .account{
+        height: 40px;
+        margin-left: 200px;
+        margin-top: 5px;
+
+       }
+       .accname{
+        margin-top: 9px;
+       }
+       .img{
+        height: 30px;
+         margin-right: 10px;
+         margin-left:50px ;
+         
+       }
+       .cart{
+        margin-left: 50px;
+        height: 28px; 
+        margin-right: 10px;
+         margin-top: 3px;
+       }
+       .btn{
+        border-radius: 20px;
+        height: 30px;
+        background-color: rgb(0, 101, 241);
+        width: 100px;
+        border: 2px double black;
+       }
+       .login{
+        margin-left: 50px;
+       }
+       .cartname{
+        margin-top: 9px;
+       }
+       /*mobile screen*/
+       @media screen and (min-width: 600px) and (max-width: 768px) {
+        .container{
+            background-color: black;
+            margin: 0%;
+            
+        }
+        .box{
+            width: 200px;
+            padding: 0%;
+        }
+        .accname{
+            display: none;
+        }
+        .account{
+            display: none;
+        }
+        .img{
+         display: none;
+        }
+        .login{
+            margin-left: 0%;
+            width: 60px;
+        }
+        .btn{
+           
+            margin-left: 0%;
+        }
+        .cart{
+            display: none;
+        }
+       }
+         /*tablet screen*/
+       @media screen and (min-width: 769px) and (max-width: 992px){
+        .container{
+            background-color: bisque;
+
+        }
+        .box{
+            width: 250px;
+
+        }
+        .accname{
+            display: none;
+        }
+        .account{
+            display: none;
+        }
+        .img{
+         display: none;
+        }
+
+       }
+        /*laptop screen*/
+       @media screen and (min-width: 993px) and (max-width: 1200px) {
+           .box{
+            width: 200px;
+            padding: 0%;
+           }
+           .accname{
+            margin-left:10px;
+           }
+          .account{
+            margin-left: 10px;
+          }
+          .login{
+            display: none;
+
+          }
+       }
+    </style>
+</head>
+<body>
+     <div class="container" style="position: sticky;">
+            <div ><img  class="logo" src="netflix.png"></div>
+
+
+            <div><input class="box" placeholder="Search for Product,Brand and More" type="text"></div>
+
+
+            <div class="account"><img class="img" src="account.png"></div> 
+
+            <span class="accname"> ACCOUNT</span>
+
+            <div class="cart"><img style="height: 28px; margin-right: 10px; margin-top: 3px;"  src="dvd-logo.png"> </div>
+
+            <span class="cartname">WEBSERIES</span>
+
+            <div><img class="img" src="video-editing-app.png"></div>
+            <span class="accname"> MOVIES</span>
+            <div class="login"><button class="btn">LOGIN</button></div>
+        </div>
+</body>
+</html>
